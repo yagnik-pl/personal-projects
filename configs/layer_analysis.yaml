@@ -1,0 +1,45 @@
+# ==============================================================================
+# AdaptiveRetriever: Layer-wise Retrieval & Cosine Stability Configuration
+# ==============================================================================
+
+experiment:
+  name: "layer_analysis_scifact"
+  description: "Layer-wise retrieval quality progression and consecutive cosine stability on SciFact"
+  seed: 42
+
+model:
+  name_or_path: "BAAI/bge-small-en-v1.5"
+  pooling_strategy: "cls"
+  max_length: 512
+  device: "auto"
+
+dataset:
+  name: "scifact"
+  data_dir: "data"
+  split: "test"
+
+retrieval:
+  top_k: 10
+  batch_size: 64
+  mode: "asymmetric"             # 'asymmetric': query at layer l vs doc index at layer L
+
+analysis:
+  layer_start: 0                 # Layer 0 is raw token embeddings before Transformer layers
+  layer_end: 12                  # Total Transformer layers
+  compute_consecutive_similarities: true
+
+evaluation:
+  metrics:
+    - "Recall@1"
+    - "Recall@5"
+    - "Recall@10"
+    - "MRR"
+    - "nDCG@10"
+
+output:
+  tables_dir: "results/tables"
+  figures_dir: "results/figures"
+  metrics_dir: "results/metrics"
+  log_dir: "results/logs"
+  figure_filename: "layer_wise_quality.png"
+  figure_pdf_filename: "layer_wise_quality.pdf"

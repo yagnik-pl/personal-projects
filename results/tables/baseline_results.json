@@ -1,0 +1,17 @@
+{
+  "experiment": "baseline_scifact",
+  "model": "BAAI/bge-small-en-v1.5",
+  "dataset": "scifact",
+  "split": "test",
+  "depth": 12,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "Recall@1": 0.5787,
+  "Recall@5": 0.7653,
+  "Recall@10": 0.8452,
+  "Precision@1": 0.6033,
+  "Precision@5": 0.17,
+  "Precision@10": 0.0953,
+  "MRR": 0.6845,
+  "nDCG@10": 0.72,
+  "num_queries_evaluated": 300.0
+}

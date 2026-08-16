@@ -1,0 +1,242 @@
+[
+    {
+        "Method": "Fixed (L1)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0006,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 1.0,
+        "Compute_%": 8.3,
+        "Latency_ms": 13.8,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Fixed (L2)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 8.12,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (strict)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 4.26,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (medium)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.29,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (aggressive)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.38,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.70)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.69,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.75)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.21,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.80)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.12,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.90)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.43,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.95)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 4.08,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.97)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 4.11,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Adaptive (tau_0.99)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0005,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 2.0,
+        "Compute_%": 16.7,
+        "Latency_ms": 3.6,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Fixed (L3)",
+        "Recall@10": 0.0073,
+        "MRR": 0.001,
+        "nDCG@10": 0.0023,
+        "Avg_Layers": 3.0,
+        "Compute_%": 25.0,
+        "Latency_ms": 10.51,
+        "Quality_Drop_%": 99.68055555555554
+    },
+    {
+        "Method": "Fixed (L4)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0004,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 4.0,
+        "Compute_%": 33.3,
+        "Latency_ms": 15.12,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Fixed (L5)",
+        "Recall@10": 0.0073,
+        "MRR": 0.001,
+        "nDCG@10": 0.0023,
+        "Avg_Layers": 5.0,
+        "Compute_%": 41.7,
+        "Latency_ms": 14.05,
+        "Quality_Drop_%": 99.68055555555554
+    },
+    {
+        "Method": "Fixed (L6)",
+        "Recall@10": 0.0073,
+        "MRR": 0.001,
+        "nDCG@10": 0.0023,
+        "Avg_Layers": 6.0,
+        "Compute_%": 50.0,
+        "Latency_ms": 15.4,
+        "Quality_Drop_%": 99.68055555555554
+    },
+    {
+        "Method": "Fixed (L7)",
+        "Recall@10": 0.0007,
+        "MRR": 0.0006,
+        "nDCG@10": 0.0004,
+        "Avg_Layers": 7.0,
+        "Compute_%": 58.3,
+        "Latency_ms": 14.82,
+        "Quality_Drop_%": 99.94444444444444
+    },
+    {
+        "Method": "Fixed (L8)",
+        "Recall@10": 0.0067,
+        "MRR": 0.0011,
+        "nDCG@10": 0.0024,
+        "Avg_Layers": 8.0,
+        "Compute_%": 66.7,
+        "Latency_ms": 12.78,
+        "Quality_Drop_%": 99.66666666666667
+    },
+    {
+        "Method": "Fixed (L9)",
+        "Recall@10": 0.0,
+        "MRR": 0.0,
+        "nDCG@10": 0.0,
+        "Avg_Layers": 9.0,
+        "Compute_%": 75.0,
+        "Latency_ms": 11.26,
+        "Quality_Drop_%": 100.0
+    },
+    {
+        "Method": "Fixed (L10)",
+        "Recall@10": 0.2169,
+        "MRR": 0.1061,
+        "nDCG@10": 0.1298,
+        "Avg_Layers": 10.0,
+        "Compute_%": 83.3,
+        "Latency_ms": 12.15,
+        "Quality_Drop_%": 81.97222222222223
+    },
+    {
+        "Method": "Fixed (L11)",
+        "Recall@10": 0.7512,
+        "MRR": 0.6002,
+        "nDCG@10": 0.63,
+        "Avg_Layers": 11.0,
+        "Compute_%": 91.7,
+        "Latency_ms": 13.1,
+        "Quality_Drop_%": 12.5
+    },
+    {
+        "Method": "Baseline",
+        "Recall@10": 0.8452,
+        "MRR": 0.6845,
+        "nDCG@10": 0.72,
+        "Avg_Layers": 12,
+        "Compute_%": 100.0,
+        "Latency_ms": 0,
+        "Quality_Drop_%": 0.0
+    },
+    {
+        "Method": "Fixed (L12)",
+        "Recall@10": 0.8452,
+        "MRR": 0.6845,
+        "nDCG@10": 0.72,
+        "Avg_Layers": 12.0,
+        "Compute_%": 100.0,
+        "Latency_ms": 11.9,
+        "Quality_Drop_%": 0.0
+    },
+    {
+        "Method": "Adaptive (tau_1.00)",
+        "Recall@10": 0.8452,
+        "MRR": 0.6845,
+        "nDCG@10": 0.72,
+        "Avg_Layers": 12.0,
+        "Compute_%": 100.0,
+        "Latency_ms": 17.72,
+        "Quality_Drop_%": 0.0
+    }
+]

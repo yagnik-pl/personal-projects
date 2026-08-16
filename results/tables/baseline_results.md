@@ -1,0 +1,3 @@
+| experiment       | model                  | dataset   | split   |   depth | device                             |   Recall@1 |   Recall@5 |   Recall@10 |   Precision@1 |   Precision@5 |   Precision@10 |    MRR |   nDCG@10 |   num_queries_evaluated |
+|:-----------------|:-----------------------|:----------|:--------|--------:|:-----------------------------------|-----------:|-----------:|------------:|--------------:|--------------:|---------------:|-------:|----------:|------------------------:|
+| baseline_scifact | BAAI/bge-small-en-v1.5 | scifact   | test    |      12 | NVIDIA GeForce RTX 4060 Laptop GPU |     0.5787 |     0.7653 |      0.8452 |        0.6033 |          0.17 |         0.0953 | 0.6845 |      0.72 |                     300 |

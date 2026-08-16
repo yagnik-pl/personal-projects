@@ -1,0 +1,43 @@
+# ==============================================================================
+# AdaptiveRetriever: Adaptive Early-Exit Sweeps & Fixed-Depth Baselines Config
+# ==============================================================================
+
+experiment:
+  name: "adaptive_scifact"
+  description: "Dynamic early-exit threshold sweep and fixed-depth comparison on SciFact"
+  seed: 42
+
+model:
+  name_or_path: "BAAI/bge-small-en-v1.5"
+  pooling_strategy: "cls"
+  max_length: 512
+  device: "auto"
+
+dataset:
+  name: "scifact"
+  data_dir: "data"
+  split: "test"
+
+retrieval:
+  top_k: 10
+  batch_size: 64
+  mode: "asymmetric"
+
+adaptive:
+  thresholds:
+    strict: 0.98
+    medium: 0.92
+    aggressive: 0.85
+  sweep_thresholds: [0.70, 0.75, 0.80, 0.85, 0.90, 0.92, 0.95, 0.97, 0.98, 0.99, 1.00]
+  min_layer: 1
+  patience: 1
+
+fixed_depths:
+  evaluate: true
+  depths: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+output:
+  tables_dir: "results/tables"
+  figures_dir: "results/figures"
+  metrics_dir: "results/metrics"
+  log_dir: "results/logs"
