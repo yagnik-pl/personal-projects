@@ -3,13 +3,19 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.so
+**/__pycache__/
 
-# C extensions
+# Model weights & Checkpoints
 *.pt
 *.pth
 *.bin
 *.ckpt
 *.h5
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.ckpt
+**/*.h5
 
 # Distribution / packaging
 build/
@@ -34,6 +40,9 @@ ENV/
 .venv/
 env.bak/
 venv.bak/
+**/.venv/
+**/venv/
+**/env/
 
 # Testing & Coverage
 .pytest_cache/
@@ -43,13 +52,20 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+**/.pytest_cache/
+**/.coverage
 
-# Data & Large Artifacts
+# Data & Large Intermediate Results
 data/
+**/data/
 results/raw/
 results/logs/
 results/metrics/
 results/processed/
+**/results/raw/
+**/results/logs/
+**/results/metrics/
+**/results/processed/
 
 # System & IDE
 .DS_Store
@@ -65,3 +81,7 @@ ORIGINAL_REQUEST.md
 PROJECT.md
 TEST_INFRA.md
 TEST_READY.md
+**/ORIGINAL_REQUEST.md
+**/PROJECT.md
+**/TEST_INFRA.md
+**/TEST_READY.md
