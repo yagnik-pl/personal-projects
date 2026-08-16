@@ -1,6 +1,6 @@
 # Personal Projects Repository
 
-A collection of research, machine learning, natural language processing, and engineering projects.
+A collection of research, machine learning, computer vision, natural language processing, and engineering projects.
 
 ---
 
@@ -8,13 +8,23 @@ A collection of research, machine learning, natural language processing, and eng
 
 | Project | Category | Description | Primary Stack | Status |
 |---|---|---|---|:---:|
+| [**`air-cursor`**](./air-cursor/) | Computer Vision & HCI | Real-time hand-gesture desktop control system using MediaPipe landmark extraction, EMA coordinate smoothing, gesture state estimation, and debounced OS actuation. | Python, OpenCV, MediaPipe, PyAutoGUI, pycaw | Completed |
 | [**`adaptive-retriever`**](./adaptive-retriever/) | NLP & Dense Retrieval | Query-adaptive dynamic-depth early exit for dense Transformer retrievers. Investigates representation stability, accuracy–efficiency Pareto trade-offs, and layer-wise IR capacity. Inspired by EffiR (ACL 2026). | PyTorch, HuggingFace, NumPy, Matplotlib | Completed |
 
 ---
 
 ## Project Summaries
 
-### 1. [AdaptiveRetriever](./adaptive-retriever/)
+### 1. [Air Cursor](./air-cursor/)
+- **Core Problem**: Touchless human-computer interaction requires low-latency, jitter-free hand tracking and robust gesture disambiguation without false click triggers or CPU overhead.
+- **Key Implementation Highlights**:
+  - **Vision Engine**: Real-time extraction of key hand landmarks (0, 4, 8, 12) via MediaPipe Hands with a dedicated TensorFlow shim to resolve environment dependency conflicts.
+  - **Mathematical Processing**: $100\text{px}$ margin active-box bounding and Exponential Moving Average ($\alpha=0.4$) smoothing to eliminate high-frequency hand tremors.
+  - **Gesture State Machine**: Disambiguates hover tracking, pinch-clicks ($<0.04$ threshold with $0.4\text{s}$ timestamp debouncing), and vertical volume modulation ($<0.03$ threshold).
+  - **System Actuation**: Hardware-level cursor manipulation and Windows master audio endpoint integration via `pycaw`.
+- **Details & Reproduction**: See [air-cursor/README.md](./air-cursor/README.md).
+
+### 2. [AdaptiveRetriever](./adaptive-retriever/)
 - **Core Problem**: Production dense bi-encoders evaluate all queries through all $L$ Transformer layers regardless of difficulty, creating unnecessary latency on the online critical path.
 - **Key Findings**:
   - Uncovers the *Early-Layer Stability Illusion*: Layers 1–6 exhibit near-perfect consecutive cosine similarity ($S(l) > 0.993$) yet have $<1\%$ Recall@10.
